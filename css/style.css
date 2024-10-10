@@ -1,0 +1,228 @@
+body{
+        width: 100%;
+}
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+a {
+    text-decoration:none
+}
+header nav h1 {
+    font-size: 70px;
+    margin: 35px;
+}
+h1{ 
+    color:#f0ece9;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+header nav ul {
+    text-decoration: none;
+    list-style: none;
+    font-weight: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+header nav ul li {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-inline: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+header {
+    text-align: center;
+    background-image: url(../image/portada.tres.png);
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 1550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.logo {
+        margin: 30px;
+}
+header a {
+    color: #f0ece9;}
+#carrito{
+    padding: 50px;
+}
+/*Nosotros*/
+.one{
+    display: grid;
+    grid-template-columns: 100px 250px 250px 250px 250px 250px 200px;
+    grid-template-rows: 30px 200px 100px 150PX ;
+}
+.imgone{
+    width: 100%;
+    grid-column: span 7;
+    height: 200px;}
+.hero{
+    color:#f0ece9;
+    grid-column: span 7;
+    background-color: #000000;
+    padding: 5PX;
+    text-align: center;
+}
+.tt{
+    color: #f0ece9;
+    grid-column: span 7;
+    padding-top: 30PX;
+    background-color: #000000;
+    box-shadow: 0 0 20px #805637;
+}
+p {
+    color: #000000;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    grid-column: span 6;
+    padding:20PX;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+
+}
+h2 p {
+    margin: 10px;
+    padding: 5px;
+}
+/*PRODUCTOS*/
+.productos{
+    display: grid;
+    grid-template-columns:repeat(5,250px);
+    grid-template-rows: 330px  50px;
+    gap: 30px;
+    padding: 15px;}
+.productos div img {
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-auto-rows: 350px;
+}
+.productos div{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    display: grid;
+    box-shadow: 10px 10px 19px -11px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 19px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow:10px 10px 19px -11px rgba(0,0,0,0.75);
+}
+
+.productos div h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.productos div a {
+    background-color: rgba(0, 0, 0, 0.777);
+    color: rgb(173, 136, 136);
+    padding: 5px;
+    margin: px;
+    text-align: center;
+}
+.h2{
+    color: #f0ece9;
+    text-align: center;
+    background-color: #000000;
+    
+}
+/*FOOTER*/
+footer div a img {
+    width: 60px;
+    height: 60px;
+    margin-right: 150px;
+}
+footer {
+    width: 1550px;
+    height: 200px;
+    background-image: url(../image/portada.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+footer div h2 {
+    margin-bottom: 50px;
+    color:white ;
+    font-size: 30px;
+}
+
+/*NOSOTROS: GALERIA 1*/
+.galeria{
+    display: grid;
+    grid-template-columns:250px 250px 250px ;
+    grid-auto-rows: auto;
+    gap: 80px;
+    margin-left: 50px;
+    padding: 15px;
+}
+.galeria div img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 10px 10px 19px -11px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 19px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow:10px 10px 19px -11px rgba(0,0,0,0.75);
+}
+.pp{
+    grid-column:span 4;
+    text-align: center;
+}
+/*NOSOTROS: GALERIA 2*/
+.galeria2{
+    display: grid;
+    grid-template-columns:250px 250px 250px  ;
+    grid-auto-rows: auto;
+    gap: 50px;
+    margin-left: 80px;
+    padding: 15px;
+}
+.galeria2 div img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 10px 10px 19px -11px  rgba(32, 148, 243, 0.693);
+    -webkit-box-shadow: 10px 10px 19px -11px   rgba(32, 148, 243, 0.693);
+    -moz-box-shadow:10px 10px 19px -11px  rgba(32, 148, 243, 0.693);
+}
+.pp{
+    grid-column:span 4;
+    text-align: center;
+}
+
+@media screen and(max-width:370){
+    header{
+        flex-direction: column;
+        width: 60%;
+        justify-content: space-between;
+    }
+    };
+    img #carrito{
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
+@media screen and(max-width:370){
+    .productos{
+        flex-wrap: wrap ;
+        
+    }
+    }
+
